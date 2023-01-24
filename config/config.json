@@ -1,0 +1,12 @@
+{
+  "applicationConfiguration": {
+    "baseUrl": "https://parabank.parasoft.com/parabank/index.htm",
+    "userName": "Alex",
+    "password": "123jul"
+  },
+  "webDriverConfiguration": {
+    "browserName": "Chrome",
+    "defaultTimeout": 10,
+    "headless": false
+  }
+}
