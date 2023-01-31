@@ -17,3 +17,5 @@ class Configuration:
                  web_driver_configuration: WebDriverConfiguration):
         self.application_configuration = application_configuration
         self.web_driver_configuration = web_driver_configuration
+
+
