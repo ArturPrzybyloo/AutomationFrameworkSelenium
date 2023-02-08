@@ -7,6 +7,8 @@
   "web_driver_configuration": {
     "browser_name": "Chrome",
     "default_timeout": 10,
-    "headless": false
+    "headless": false,
+    "full_screen": true,
+    "disable_notifications": true
   }
 }
