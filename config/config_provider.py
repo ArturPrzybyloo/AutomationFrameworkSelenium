@@ -4,6 +4,10 @@ from config.config import Configuration, ApplicationConfiguration, WebDriverConf
 
 
 class ConfigProvider:
+    def __init__(self):
+        self.configuration = self.load_config()
+
+
 
     def load_config(self):
         with open("C:/Users/HP/PycharmProjects/AutomationFrameworkSelenium/config/config.json", "r") as config:

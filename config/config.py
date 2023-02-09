@@ -6,10 +6,13 @@ class ApplicationConfiguration:
 
 
 class WebDriverConfiguration:
-    def __init__(self, browser_name, default_timeout: int, headless: bool):
+    def __init__(self, browser_name, default_timeout: int, headless: bool, full_screen: bool,
+                 disable_notifications: bool):
         self.browser_name = browser_name
         self.default_timeout = default_timeout
         self.headless = headless
+        self.full_screen = full_screen
+        self.disable_notifications = disable_notifications
 
 
 class Configuration:
@@ -17,5 +20,3 @@ class Configuration:
                  web_driver_configuration: WebDriverConfiguration):
         self.application_configuration = application_configuration
         self.web_driver_configuration = web_driver_configuration
-
-
