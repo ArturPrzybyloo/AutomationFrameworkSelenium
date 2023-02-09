@@ -3,10 +3,12 @@ import pytest
 from config.config_provider import ConfigProvider
 from webdriver.web_driver_factory import WebDriverFactory
 
+config = ConfigProvider()
+
 
 @pytest.fixture()
 def driver(request):
-    config = ConfigProvider()
+    # Set webdriver properties
     wd = WebDriverFactory(config.configuration).create_driver()
     session = request.node
     cls = session.getparent(pytest.Class)
