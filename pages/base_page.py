@@ -14,3 +14,5 @@ class BasePage(Page):
         self.wait = WebDriverWait(driver, self.config.web_driver_configuration.default_timeout)
         self.ec = ec
         self.fake = Faker()
+
+
