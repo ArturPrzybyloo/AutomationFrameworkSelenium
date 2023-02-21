@@ -1,5 +1,6 @@
 import pytest
 
+
 from config.config_provider import ConfigProvider
 from webdriver.web_driver_factory import WebDriverFactory
 

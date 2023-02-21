@@ -10,7 +10,7 @@ class ConfigProvider:
 
 
     def load_config(self):
-        with open("C:/Users/HP/PycharmProjects/AutomationFrameworkSelenium/config/config.json", "r") as config:
+        with open("C:/Users/marze/PycharmProjects/AutomationFrameworkSelenium/config/config.json", "r") as config:
             config_json = json.loads(config.read())
             webdriver_config = WebDriverConfiguration(**config_json['web_driver_configuration'])
             app_configuration = ApplicationConfiguration(**config_json['application_configuration'])
