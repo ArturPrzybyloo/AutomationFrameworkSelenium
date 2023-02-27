@@ -19,3 +19,5 @@ class TestSearch:
         mp.enter_password()
         mp.enter_repeated_password()
         print(driver.title)
+        # checking if we are on desired website which is: ParaBank register form
+        assert(driver.title == "ParaBank | Register for Free Online Account Access")

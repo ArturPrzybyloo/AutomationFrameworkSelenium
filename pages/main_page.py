@@ -8,8 +8,11 @@ class MainPage(BasePage):
         super().__init__(driver, **url_kwargs)
 
     # Locators
+    # buttons
     register_button = (By.LINK_TEXT, "Register")
+    register_submit_button = (By.XPATH, "//input[@type='submit']")
     register_form = (By.ID, "customerForm")
+    # inputs
     first_name_input = (By.ID, "customer.firstName")
     last_name_input = (By.ID, "customer.lastName")
     address_input = (By.ID, "customer.address.street")
